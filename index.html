@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries List</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="py-5 shadow-lg bg-white flex items-center justify-between px-5">
+        <h1 class="text-2xl font-bold text-teal-800">Countries List </h1>
+        <div class="flex items-center gap-5">
+            <button class="w-[60px] h-[60px] flex items-center text-[16px] rounded-[50%] border-[1px] border-red-600 gap-[6px] px-[5px]  text-red-600">
+                <span class="">(0)</span>
+                <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.701 471.701"><path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z"></path></svg>
+            </button>
+            <button class="w-[60px] h-[60px] flex items-center text-[16px] rounded-[50%] border-[1px] border-green-600 gap-[6px] px-[5px] text-green-600 ">
+                <span class="">(0)</span>
+                
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 19.2674V7.84496C19 5.64147 17.4253 3.74489 15.2391 3.31522C13.1006 2.89493 10.8994 2.89493 8.76089 3.31522C6.57467 3.74489 5 5.64147 5 7.84496V19.2674C5 20.6038 6.46752 21.4355 7.63416 20.7604L10.8211 18.9159C11.5492 18.4945 12.4508 18.4945 13.1789 18.9159L16.3658 20.7604C17.5325 21.4355 19 20.6038 19 19.2674Z" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button id="moon" class="w-[60px] h-[60px] flex items-center justify-center rounded-[50%] border-[3px] border-black-600 px-[5px]  ">
+               <img width="40" height="40" src="./images/moon.svg" alt="">
+            </button>
+            <button id="sun" class="w-[60px] h-[60px] flex items-center justify-center rounded-[50%] border-[3px] border-black-600 px-[7px] hidden ">
+                <img width="40" height="40" src="./images/sun.svg" alt="">
+             </button>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container w-[1200px] mx-auto px-[20px]">
+                <div class="hero py-[10px] mt-[20px] flex justify-between">
+                    <input class="hero__input w-[200px] p-2 border-cyan-700 border-[1px] rounded-[10px]" type="text" placeholder="Searching...">
+                    <select class="w-[200px] p-2 border-cyan-700 border-[1px] rounded-[10px]"  name="" id="">
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <ul class="content-list mt-[30px] flex flex-wrap justify-between gap-[15px]">
+                    
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+    
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
