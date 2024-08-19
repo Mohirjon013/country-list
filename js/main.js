@@ -100,7 +100,7 @@ function renderCountries(arr) {
         
        <div class ="big-wrapper w-full h-full backdrop-blur-lg hidden fixed top-0 left-0 w-[100vw] h-[100vh] flex items-center justify-center">
             
-            <div id = "modal-wrapper" class ="w-[30%] p-5 rounded-lg bg-slate-300">
+            <div id = "modal-wrapper" class ="w-[400px] p-5 rounded-lg bg-slate-300">
             <button class = "close-btn">
                 <img id = "close" class = "w-[40px] h-[40px] ml-auto mb-[15px]" src="./images/close.svg" alt="">
             </button>
